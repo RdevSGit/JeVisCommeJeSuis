@@ -1,0 +1,141 @@
+<div id="home_page">
+    <div class="logo_mobile_top">
+        <div class="logo_mobile_top_h1">
+            <?php if (isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
+                <h1>bonjour <?= $_SESSION['id'] ?></h1>
+            <?php else : ?>
+                <h1>je vie comme je suis</h1>
+            <?php endif; ?>
+        </div>
+        <div class="logo_top_mobile_img">
+            <img src="view//img/logo-je-vis-comme-je-suis--basic.png" alt="">
+        </div>
+    </div>
+    <div class="first_part">
+        <div class="reflexe_primitif" id="reflexe_primitif">
+            <h2>réflexes primitif</h2>
+            <div class="reflexe_primitif_1">
+                <h3>posture</h3>
+                <ul>
+                    <li>Instabilité posturale</li>
+                    <li>Posture avachie ou tendue</li>
+                    <li>Douleurs lombaires, cervicales</li>
+                    <li>Difficulté pour l’apprentissage de la nage, du vélo </li>
+                    <li>Perte d’équilibre</li>
+                    <li>Mal des transports</li>
+                    <li>Maladresse</li>
+                    <li>Hyperactivité</li>
+                </ul>
+            </div>
+            <div class="reflexe_primitif_2">
+                <h3>émotions</h3>
+                <ul>
+                    <li>Difficultés émotionnelles et relationnelles</li>
+                    <li>Réactions inappropriées en cas de danger</li>
+                    <li>Insécurité</li>
+                    <li>Manque d’estime de soi</li>
+                    <li>Timidité</li>
+                    <li>Troubles du sommeil</li>
+                    <li>Peur des séparations</li>
+                    <li>Troubles de l’alimentation</li>
+                    <li>Hypersensibilité</li>
+                    <li>Fatigue</li>
+                    <li>Colère</li>
+                </ul>
+            </div>
+            <div class="reflexe_primitif_3">
+                <h3>cognitif</h3>
+                <ul>
+                    <li>Troubles cognitifs</li>
+                    <li>Dyslexie</li>
+                    <li>Difficultés pour recopier au tableau</li>
+                    <li>Difficultés de lecture</li>
+                    <li>Faible capacité de concentration</li>
+                    <li>Trouble du langage</li>
+                    <li>Difficultés d’écriture</li>
+                </ul>
+            </div>
+            <p>Les <strong> réflexes primitifs</strong> sont des mouvements involontaires que l’on peut observer chez les nouveau-nés, tels que le réflexe d’agrippement palmaire par exemple. Ils vont permettre de mettre le corps en mouvement dès les premières semaines de gestation</p>
+            <a class='button'>En savoir plus</a>
+        </div>
+        <div class="reiki" id="reiki">
+            <h2>reiki</h2>
+            <div class="reiki_1">
+                <h3>sur le plan physique</h3>
+                <ul>
+                    <li>Douleurs fantômes</li>
+                    <li>Jambes lourdes y compris durant la grossesse</li>
+                    <li>Meilleure respiration</li>
+                    <li>Sommeil réparateur</li>
+                    <li>Douleurs articulaires</li>
+                    <li>Accompagnement lors de traitements lourds</li>
+                </ul>
+            </div>
+            <div class="reiki_2">
+                <h3>sur le plan émotionnel</h3>
+                <ul>
+                    <li>Allègement de la charge mentale</li>
+                    <li>Sérénité Apaisement</li>
+                    <li>Blessures du passé</li>
+                    <li>Recentrage et ancrage</li>
+                    <li>Estime et confiance en soi</li>
+                </ul>
+            </div>
+            <p>Le <strong> reiki</strong> est une pratique énergétique qui vous accompagne sur un plan physique et/ou émotionnel. Par imposition des mains sur votre corps ou à distance, l’énergie Reiki vous permet de recevoir du bien-être, là où vous en avez le plus besoin sur l’instant, afin d’enclencher un processus d’auto-guérison.
+            </p>
+            <a class='button'>En savoir plus</a>
+        </div>
+    </div>
+    <div class="second_part" id="qui_suis_je">
+        <h2>qui suis-je</h2>
+        <div class="profil_picture">
+            <img src="view/img/photo.jpg" alt="profil_picture" id='profil_picture'>
+        </div>
+        <div class="who_i_am">
+            <p>En 2017, mon chemin se concrétise pour me conduire jusqu’à l’exercice d’une activité qui me permet aujourd’hui de vous proposer un accompagnement par le bien être. Grâce à une conférence de Nita Mocanu à Bourges, je découvre ce qu’est le Reiki. C’est alors auprès de Claire Denizet que je réaliserai la totalité de ma formation, jusqu’au certificat de Maître Enseignante Reiki Usui en 2020.
+                L’année 2020, sera celle où je terminerai mon parcours de formation en Reiki pour en débuter un nouveau à l’institut Cassiopée, à Chatou, auprès de Claire Lecut, afin d’obtenir le certificat de Praticienne en Réflexes Primitifs.
+                Les deux pratiques réunies m’ont permis une transformation intérieure qui me conduit aujourd’hui à exercer pleinement une activité consacrée à l’accompagnement par des méthodes de bien-être. Grâce à mes formations et mon parcours personnel, je vous accompagne dans le respect de votre corps et de vos émotions selon l’expression de vos besoins.</p>
+        </div>
+        <div class="connexion_toggle">
+            <?php if (isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
+                <button class='destroy_session'>Déconnexion</button>
+            <?php else : ?>
+                <form action="index.php?page=connect_user" method='POST'>
+                    <input id='login' title='login' name='login' type="text">
+                    <input id='password' title='password' name='password' type="password">
+                    <div class="connexion_toggle_button">
+                        <button class='connect_user'>connexion</button>
+                        <a class='close_connexion_toggle'>fermer</a>
+                    </div>
+                </form>
+            <?php endif; ?>
+
+        </div>
+    </div>
+    <div class="third_part" id="temoignage">
+        <h2>témoignages</h2>
+        <div class="reiki_view">
+            <h3>reiki</h3>
+            <div class="view">
+                <h4></h4>
+                <p></p>
+                <p><small></small></p>
+            </div>
+        </div>
+        <div class="reflexe_primitif_view">
+            <h3>réflexes primitifs</h3>
+            <div class="view">
+                <h4></h4>
+                <p></p>
+                <p><small></small></p>
+            </div>
+        </div>
+    </div>
+    <div class="fourth_part">
+        <div class="services" id="tarif_contact">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+</div>

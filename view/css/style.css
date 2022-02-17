@@ -1,0 +1,304 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --color-1: #c94034;
+    --color-2: #F7B6AF;
+    --color-3: #F57264;
+    --color-4: #755753;
+    --color-5: #C25B4F;
+}
+
+@font-face {
+    font-family: 'Baloo';
+    src: url('../font/Baloo-Regular.ttf');
+}
+
+a,
+p,
+li,
+button {
+    font-family: 'Baloo';
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Cookie';
+    src: url('../font/Cookie-Regular.ttf');
+}
+
+h1 {
+    font-family: 'Cookie';
+    font-size: 4em;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+
+
+    .nav_mobile {
+        display: flex;
+        flex-flow: column;
+        position: fixed;
+        bottom: -375px;
+        left: 0px;
+        width: 100%;
+        background: var(--color-1);
+        padding-bottom: 120px;
+        border-radius: 10px 10px 0 0;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        transition: all .4s;
+    }
+
+    .nav_mobile a {
+        padding: 10px;
+        color: #fff;
+        font-size: 1.2em;
+    }
+
+    .menu_mobile_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--color-3);
+        z-index: 0;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        transition: all .5s;
+    }
+
+    .menu_mobile_button svg {
+        transition: all .5s;
+    }
+
+    .raise_nav {
+        bottom: 0px;
+    }
+
+    .active {
+        box-shadow: inherit;
+        background: var(--color-1);
+        border:.5px solid #fff;
+    }
+
+    .rotate_scale {
+        transform: rotate(45deg) scale(1.2);
+
+    }
+
+    .logo_mobile_top {
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .logo_mobile_top_h1 {
+        height: 25%;
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    .logo_mobile_top h1 {
+        color: var(--color-3);
+        text-transform: capitalize;
+    }
+
+    .logo_mobile_top_img {
+        height: 75%;
+    }
+
+    .logo_mobile_top img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .first_part {
+        display: flex;
+        flex-flow: column;
+        background: var(--color-3);
+    }
+
+    .first_part div {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    h2 {
+        text-transform: capitalize;
+        font-family: 'Cookie';
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .first_part h2,
+    .third_part h2 {
+        color: #fff;
+    }
+
+    .first_part .reflexe_primitif,
+    .reiki {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .first_part div div {
+        background: #fff;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .first_part h3 {
+        text-transform: capitalize;
+        color: var(--color-3)
+    }
+
+    .first_part ul {
+        padding: 20px 0;
+    }
+
+    .first_part h3,
+    li {
+        text-align: center;
+    }
+
+    .first_part li {
+        color: var(--color-4)
+    }
+
+    .first_part p {
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .first_part .button {
+        font-size: inherit;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        color: #fff;
+        background: var(--color-1)
+    }
+
+    .second_part {
+        display: flex;
+        flex-flow: column;
+        padding: 20px 0;
+    }
+
+    .second_part h2 {
+        color: var(--color-3);
+    }
+
+    .second_part .profil_picture {
+        margin: 20px auto;
+    }
+
+    .second_part .profil_picture img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .second_part p {
+        padding: 20px;
+        text-align: justify;
+        color: var(--color-4)
+    }
+
+    .second_part .connexion_toggle {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-flow: column;
+        width: 80%;
+        max-width: 300px;
+        padding: 20px;
+        background: var(--color-1);
+        border-radius: 5px;
+        display: none;
+    }
+
+    .second_part .destroy_session {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .second_part .connexion_toggle input {
+        padding: 10px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .second_part .connexion_toggle_button {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .second_part .connexion_toggle_button button,
+    a {
+        text-transform: capitalize;
+        min-width: 45%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .second_part input,
+    .second_part button,
+    .second_part a {
+        border-style: none;
+        border-radius: 5px;
+        background: #fff;
+    }
+
+    .third_part {
+        background: var(--color-3);
+    }
+
+    .third_part h2 {
+        padding: 20px;
+    }
+
+    .third_part h3 {
+        color: var(--color-4);
+        text-transform: capitalize;
+        padding: 0 20px;
+    }
+
+    .third_part .view {
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 5px;
+        background: #fff;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {}

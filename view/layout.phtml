@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="view/js/jquery.js"></script>
+    <link rel="stylesheet" href="view/css/style.css">
+    <title>Je vis comme je suis</title>
+</head>
+
+<body>
+
+    <main>
+        <?php include $template . ".phtml"; ?>
+    </main>
+    <div class="nav_mobile">
+        <?php if (isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
+            <a href="">ajouter / supprimer des avis</a>
+            <a href="">ajouter / supprimer des prestations</a>
+        <?php else : ?>
+            <a href="#reflexe_primitif">les réflexes primitifs</a>
+            <a href="#reiki">le reiki</a>
+            <a href="#qui_suis_je">qui suis-je</a>
+            <a href="#temoignage">témoignages</a>
+            <a href="#tarif_contact">tarif & contact</a>
+        <?php endif; ?>
+    </div>
+    <div class="menu_mobile_button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+    </div>
+    <script src="view/js/script.js"></script>
+</body>
+
+</html>
