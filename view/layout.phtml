@@ -17,8 +17,8 @@
     </main>
     <div class="nav_mobile">
         <?php if (isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
-            <a href="">ajouter / supprimer des avis</a>
-            <a href="">ajouter / supprimer des prestations</a>
+            <a href="index.php?page=add_remove_review_page">ajouter / supprimer des avis</a>
+            <a href="index.php?page=add_remove_service_page">ajouter / supprimer des prestations</a>
         <?php else : ?>
             <a href="#reflexe_primitif">les réflexes primitifs</a>
             <a href="#reiki">le reiki</a>

@@ -1,0 +1,16 @@
+<div class="side_page">
+    <h2>Ajout / Suppression de Témoignages</h2>
+    <form action="view/php/ajax/add_review.php" method='POST'>
+        <input type="text" placeholder="titre" name='title' required>
+        <textarea type="text" placeholder="contenu" name='content' required></textarea>
+        <input type="text" placeholder="auteur" name='author' required>
+        <select name="category">
+            <option value="1">reiki</option>
+            <option value="2">reflexe primitif</option>
+        </select>
+        <button>envoyer</button>
+    </form>
+    <div class="list list_review">
+
+    </div>
+</div>

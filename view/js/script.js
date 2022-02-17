@@ -4,7 +4,7 @@ function openConnexionToggle() {
   $(".connexion_toggle").slideToggle("fast");
 }
 
-// function connectUserAjax() {
+// function addReview() {
 //   let login = $("#login").val();
 //   let password = $("#password").val();
 
@@ -37,10 +37,25 @@ function openMobileNav() {
   $(".menu_mobile_button svg").toggleClass("rotate_scale");
 }
 
+function addReview() {
+  let form = $(this);
+  let action = form.attr("action");
+
+  $.ajax({
+    type: "POST",
+    url: action,
+    data: from.serialize(),
+    success: function (data) {
+      alert(data)
+    },
+  });
+}
+
 $(function () {
   $("#profil_picture").on("click", openConnexionToggle);
   $(".close_connexion_toggle").on("click", openConnexionToggle);
   $(".nav_mobile a").on("click", openMobileNav);
   $(".destroy_session").on("click", destroySession);
   $(".menu_mobile_button").on("click", openMobileNav);
+  $("#add_review_form").submit(addReview);
 });

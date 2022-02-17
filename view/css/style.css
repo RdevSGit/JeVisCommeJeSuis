@@ -98,7 +98,7 @@ h1 {
     .active {
         box-shadow: inherit;
         background: var(--color-1);
-        border:.5px solid #fff;
+        border: .5px solid #fff;
     }
 
     .rotate_scale {
@@ -193,7 +193,8 @@ h1 {
         padding: 20px 0;
     }
 
-    .first_part .button {
+    .first_part .button,
+    .side_page button {
         font-size: inherit;
         margin: 0 auto;
         padding: 10px;
@@ -299,6 +300,47 @@ h1 {
         background: #fff;
     }
 
+    /***/
+    /* SIDE_PAGE */
+    /***/
+
+
+    .side_page {
+        background: var(--color-3);
+    }
+
+    .side_page h2 {
+        color: #fff;
+        padding: 20px;
+    }
+
+    .side_page form {
+        display: flex;
+        flex-flow: column;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .side_page input,
+    textarea, select {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .side_page textarea {
+        resize: none;
+    }
+
+    .side_page input::placeholder,
+    textarea::placeholder,
+    button,
+    select {
+        text-transform: capitalize;
+    }
+
+    .side_page button {
+        border-style: none
+    }
 }
 
 @media screen and (min-width: 1024px) {}
