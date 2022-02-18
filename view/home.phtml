@@ -96,10 +96,9 @@
                 L’année 2020, sera celle où je terminerai mon parcours de formation en Reiki pour en débuter un nouveau à l’institut Cassiopée, à Chatou, auprès de Claire Lecut, afin d’obtenir le certificat de Praticienne en Réflexes Primitifs.
                 Les deux pratiques réunies m’ont permis une transformation intérieure qui me conduit aujourd’hui à exercer pleinement une activité consacrée à l’accompagnement par des méthodes de bien-être. Grâce à mes formations et mon parcours personnel, je vous accompagne dans le respect de votre corps et de vos émotions selon l’expression de vos besoins.</p>
         </div>
-        <div class="connexion_toggle">
-            <?php if (isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
-                <button class='destroy_session'>Déconnexion</button>
-            <?php else : ?>
+        <?php if (isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
+        <?php else : ?>
+            <div class="connexion_toggle">
                 <form action="index.php?page=connect_user" method='POST'>
                     <input id='login' title='login' name='login' type="text">
                     <input id='password' title='password' name='password' type="password">
@@ -108,9 +107,8 @@
                         <a class='close_connexion_toggle'>fermer</a>
                     </div>
                 </form>
-            <?php endif; ?>
-
-        </div>
+            </div>
+        <?php endif; ?>
     </div>
     <div class="third_part" id="temoignage">
         <h2>témoignages</h2>

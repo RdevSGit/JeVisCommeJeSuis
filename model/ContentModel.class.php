@@ -21,4 +21,18 @@ class ContentModel
         $query = $this->bdd->prepare("INSERT INTO service (title ,time, price) VALUES (?,?,?)");
         $query->execute(array($title, $time, $price));
     }
+    public function Review()
+    {
+        $query = $this->bdd->prepare('SELECT title, content, author FROM review ORDER BY date DESC');
+        $query->execute(array());
+        $review = $query->fetchAll();
+        return $review;
+    }
+    public function Service()
+    {
+        $query = $this->bdd->prepare('SELECT title, time, price FROM service ORDER BY date DESC');
+        $query->execute(array());
+        $service = $query->fetchAll();
+        return $service;
+    }
 }

@@ -46,7 +46,21 @@ function addReview() {
     url: action,
     data: from.serialize(),
     success: function (data) {
-      alert(data)
+      alert(data);
+    },
+  });
+}
+
+function addservice() {
+  let form = $(this);
+  let action = form.attr("action");
+
+  $.ajax({
+    type: "POST",
+    url: action,
+    data: from.serialize(),
+    success: function (data) {
+      alert(data);
     },
   });
 }
@@ -58,4 +72,5 @@ $(function () {
   $(".destroy_session").on("click", destroySession);
   $(".menu_mobile_button").on("click", openMobileNav);
   $("#add_review_form").submit(addReview);
+  $("#add_service_form").submit(addservice);
 });

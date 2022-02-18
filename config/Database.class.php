@@ -8,7 +8,7 @@ class Database
     {
         //connexion à la bdd à mettre dans la proporiété bdd
         try {
-            $this->bdd = new PDO('mysql:host=localhost;dbname=lagrange;charset=utf8', 'root', '');
+            $this->bdd = new PDO('mysql:host=localhost;dbname=jeviscommejesuis;charset=utf8', 'root', '');
         } catch (Exception $e) {
             die('Erreur : ' . $e->getMessage());
         }
