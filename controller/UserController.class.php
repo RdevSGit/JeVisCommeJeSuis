@@ -22,7 +22,7 @@ class UserController
             header('location:index.php');
             exit;
         } else if (password_verify($password, $user['password'])) {
-            $_SESSION['id'] = $user['id'];
+            $_SESSION['id'] = $user['login'];
             echo $_SESSION['id'];
             header('location:index.php');
             exit;
