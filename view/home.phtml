@@ -114,19 +114,23 @@
         <h2>témoignages</h2>
         <div class="reiki_view">
             <h3>reiki</h3>
-            <div class="view">
-                <h4></h4>
-                <p></p>
-                <p><small></small></p>
-            </div>
+            <?php foreach ($review_cat_1 as $cat_1) : ?>
+                <div class="view">
+                    <h4><?= $cat_1['title'] ?></h4>
+                    <p><?= $cat_1['content'] ?></p>
+                    <p><small><?= $cat_1['author'] ?></small></p>
+                </div>
+            <?php endforeach; ?>
         </div>
         <div class="reflexe_primitif_view">
             <h3>réflexes primitifs</h3>
-            <div class="view">
-                <h4></h4>
-                <p></p>
-                <p><small></small></p>
-            </div>
+            <?php foreach ($review_cat_2 as $cat_2) : ?>
+                <div class="view">
+                    <h4><?= $cat_2['title'] ?></h4>
+                    <p><?= $cat_2['content'] ?></p>
+                    <p><small><?= $cat_2['author'] ?></small></p>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
     <div class="fourth_part">

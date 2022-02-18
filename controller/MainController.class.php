@@ -14,6 +14,8 @@ class MainController
 
     public function ShowHomePage()
     {
+        $review_cat_1 = $this->mainmodel->pushReviewCat1();
+        $review_cat_2 = $this->mainmodel->pushReviewCat2();
         $template = "home";
         include "view/layout.phtml";
     }
