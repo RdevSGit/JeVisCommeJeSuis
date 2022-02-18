@@ -16,6 +16,8 @@ class MainController
     {
         $review_cat_1 = $this->mainmodel->pushReviewCat1();
         $review_cat_2 = $this->mainmodel->pushReviewCat2();
+        $service = $this->mainmodel->pushService();
+        $contact = $this->mainmodel->pushContact();
         $template = "home";
         include "view/layout.phtml";
     }

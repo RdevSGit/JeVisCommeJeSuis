@@ -134,10 +134,27 @@
         </div>
     </div>
     <div class="fourth_part">
-        <div class="services" id="tarif_contact">
-            <p></p>
-            <p></p>
-            <p></p>
+        <div class="service_contact" id="tarif_contact">
+            <div class="service_part">
+                <?php foreach ($service as $s) : ?>
+                    <ul>
+                        <li><?= $s['title'] ?> : </li>
+                        <div class="time_price">
+                            <li><?= $s['time'] ?></li>
+                            <li><?= $s['price'] ?></li>
+                        </div>
+                    </ul>
+                <?php endforeach; ?>
+            </div>
+            <div class="contact_part">
+                <ul>
+                    <li><?= $contact['name'] ?></li>
+                    <li><?= $contact['address'] ?></li>
+                    <li><?= $contact['code'] ?></li>
+                    <li><a href="tel:+33<?= substr(str_replace(' ', '', $contact['phone']), 1); ?>"><?= $contact['phone'] ?></a></li>
+                    <li><?= $contact['mail'] ?></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

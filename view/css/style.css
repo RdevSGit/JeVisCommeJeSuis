@@ -296,7 +296,7 @@ h1 {
     }
 
     .third_part h3 {
-        color: var(--color-4);
+        color:#463736;
         text-transform: capitalize;
         padding: 20px;
         text-align: center;
@@ -323,6 +323,57 @@ h1 {
     .third_part .view p:nth-child(3) {
         text-align: right;
         color: var(--color-1)
+    }
+
+    .fourth_part {
+        padding: 20px 0;
+    }
+
+    .fourth_part .service_contact {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .fourth_part .service_part {
+        background: var(--color-2);
+        width: 95%;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .fourth_part .service_part ul {
+        display: flex;
+        flex-flow: column;
+        padding: 10px;
+        font-weight: bold;
+        color:#463736;
+
+    }
+
+    .fourth_part .service_part ul .time_price {
+        display: flex;
+        justify-content: space-between;
+        font-weight: normal;
+
+    }
+
+    .fourth_part .contact_part {
+        display: flex;
+        flex-flow: column;
+        width: 95%;
+        margin: 0 auto;
+        background: var(--color-3);
+        border-radius: 5px;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    .fourth_part .contact_part li a {
+        color: #fff;
     }
 
     /***/
