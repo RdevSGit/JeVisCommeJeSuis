@@ -23,14 +23,14 @@ class ContentModel
     }
     public function Review()
     {
-        $query = $this->bdd->prepare('SELECT title, content, author FROM review ORDER BY date DESC');
+        $query = $this->bdd->prepare('SELECT id, title, content, author FROM review ORDER BY date DESC');
         $query->execute(array());
         $review = $query->fetchAll();
         return $review;
     }
     public function Service()
     {
-        $query = $this->bdd->prepare('SELECT title, time, price FROM service ORDER BY date DESC');
+        $query = $this->bdd->prepare('SELECT id, title, time, price FROM service ORDER BY date DESC');
         $query->execute(array());
         $service = $query->fetchAll();
         return $service;

@@ -4,23 +4,6 @@ function openConnexionToggle() {
   $(".connexion_toggle").slideToggle("fast");
 }
 
-// function addReview() {
-//   let login = $("#login").val();
-//   let password = $("#password").val();
-
-//   $.ajax({
-//     type: "POST",
-//     url: "view/php/ajax/connexion_user.php",
-//     data: {
-//       login: login,
-//       password: password,
-//     },
-//     success: function (data) {
-//       console.log(data);
-//     },
-//   });
-// }
-
 function destroySession() {
   $.ajax({
     type: "GET",
@@ -40,7 +23,6 @@ function openMobileNav() {
 function addReview() {
   let form = $(this);
   let action = form.attr("action");
-
   $.ajax({
     type: "POST",
     url: action,
@@ -54,13 +36,26 @@ function addReview() {
 function addservice() {
   let form = $(this);
   let action = form.attr("action");
-
   $.ajax({
     type: "POST",
     url: action,
     data: from.serialize(),
     success: function (data) {
       alert(data);
+    },
+  });
+}
+
+function deleteThis() {
+  let id = $(this).attr("name");
+  let table = $(this).attr("class");
+  $(this).parents("ul").slideToggle("");
+  $.ajax({
+    type: "POST",
+    url: "view/php/ajax/remove_review_service.php",
+    data: {
+      id: id,
+      table: table,
     },
   });
 }
@@ -73,4 +68,5 @@ $(function () {
   $(".menu_mobile_button").on("click", openMobileNav);
   $("#add_review_form").submit(addReview);
   $("#add_service_form").submit(addservice);
+  $(".list svg").on("click", deleteThis);
 });
