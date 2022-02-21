@@ -17,9 +17,6 @@ $ContentController = new ContentController();
 
 if (isset($_GET["page"])) {
     switch ($_GET['page']) {
-        case 'home':
-            $MainController->ShowHomePage();
-            break;
         case 'connect_user':
             $UserController->ConnectUser();
             break;
@@ -29,11 +26,11 @@ if (isset($_GET["page"])) {
         case 'add_remove_service_page':
             $ContentController->AddOrRemoveServicePage();
             break;
-        case 'add_review':
-            $ContentController->AddReview();
+        case "en_savoir_plus_sur_le_reiki";
+            $MainController->ShowReikiPage();
             break;
-        case 'add_service':
-            $ContentController->AddService();
+        case "en_savoir_plus_sur_les_réflexes_primitif":
+            $MainController->ShowReflexePage();
             break;
     }
 } else {

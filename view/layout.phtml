@@ -5,12 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta nam="description" content="Accompagnement enfants adultes avec difficultés d’apprentissage, émotionnelle, posture, motricité.
+    Développement personnel, performance sportive, musicale.">
     <script src="view/js/jquery.js"></script>
     <link rel="stylesheet" href="view/css/style.css">
-    <title>Je vis comme je suis</title>
+    <title>Je vis comme je suis - Réflexes primitifs Reiki - Bourges</title>
 </head>
 
 <body>
+    <nav>
+        <?php if (isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
+            <a href="index.php?page=add_remove_review_page">ajouter / supprimer des avis</a>
+            <a href="index.php?page=add_remove_service_page">ajouter / supprimer des prestations</a>
+            <a href="index.php?page=home">Acceuil</a>
+            <a class="destroy_session">déconnexion</a>
+        <?php else : ?>
+            <a href="#first_anchor">réflexes primitifs et reiki</a>
+            <a href="#second_anchor">qui suis-je</a>
+            <a href="#third_anchor">témoignages</a>
+            <a href="#fourth_anchor">tarif & contact</a>
+        <?php endif; ?>
+    </nav>
     <main>
         <?php include $template . ".phtml"; ?>
     </main>
@@ -29,10 +44,19 @@
         <?php endif; ?>
     </div>
     <div class="menu_mobile_button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-        </svg>
+        <?php if (isset($_GET['page']) == "en_savoir_plus_sur_les_réflexes_primitif" || isset($_GET['page']) == "en_savoir_plus_sur_le_reiki") : ?>
+            <svg viewBox="0 0 64 64" width="30" height="30" class="back" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Undo</title>
+                <desc>A line styled icon from Orion Icon Library.</desc>
+                <path stroke-width="3.5" stroke-linecap="round" stroke="#fff" fill="none" d="M3 46h44a15 15 0 0 0 15-15 15 15 0 0 0-15-15H2" data-name="layer2" stroke-linejoin="round"></path>
+                <path d="M16 34L3 46l13 12" stroke-width="3.5" stroke-linecap="round" stroke="#fff" fill="none" data-name="layer1" stroke-linejoin="round"></path>
+            </svg>
+        <?php else : ?>
+            <svg xmlns="http://www.w3.org/2000/svg" class="open_menu" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+        <?php endif; ?>
     </div>
     <script src="view/js/script.js"></script>
 </body>

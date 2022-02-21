@@ -25,4 +25,5 @@ class ContentController
         $template = "add_remove_service";
         include "view/layout.phtml";
     }
+
 }

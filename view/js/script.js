@@ -60,13 +60,19 @@ function deleteThis() {
   });
 }
 
+function backToHomePage(){
+  document.location.href="index.php";
+}
+
 $(function () {
   $("#profil_picture").on("click", openConnexionToggle);
   $(".close_connexion_toggle").on("click", openConnexionToggle);
   $(".nav_mobile a").on("click", openMobileNav);
   $(".destroy_session").on("click", destroySession);
-  $(".menu_mobile_button").on("click", openMobileNav);
+  $(".open_menu").on("click", openMobileNav);
   $("#add_review_form").submit(addReview);
   $("#add_service_form").submit(addservice);
   $(".list svg").on("click", deleteThis);
+  $('.back').on("click", backToHomePage)
+
 });

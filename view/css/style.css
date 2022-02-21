@@ -51,7 +51,323 @@ h1 {
     font-size: 4em;
 }
 
+.first_part {
+    display: flex;
+    background: var(--color-3);
+}
+
+.first_part div {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-family: 'Cookie';
+    text-align: center;
+    font-size: 2em;
+}
+
+.first_part h2,
+.third_part h2 {
+    color: #fff;
+}
+
+.first_part .reflexe_primitif,
+.reiki {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.first_part div div {
+    background: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.first_part h3 {
+    text-transform: capitalize;
+    color: var(--color-3)
+}
+
+.first_part ul {
+    padding: 20px 0;
+}
+
+.first_part h3,
+.first_part li {
+    text-align: center;
+}
+
+.first_part li {
+    color: var(--color-4)
+}
+
+.first_part p {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.first_part .button,
+.side_page button {
+    font-size: inherit;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: #fff;
+    background: var(--color-1)
+}
+
+.second_part {
+    display: flex;
+    flex-flow: column;
+    padding: 20px 0;
+}
+
+.second_part h2 {
+    color: var(--color-3);
+}
+
+.second_part .picture_description {
+    display: flex;
+    flex-flow: column;
+}
+
+.second_part .profil_picture {
+    margin: 20px auto;
+}
+
+.second_part .profil_picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.second_part p {
+    padding: 20px;
+    text-align: justify;
+    color: var(--color-4)
+}
+
+.second_part .connexion_toggle {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    max-width: 300px;
+    padding: 20px;
+    background: var(--color-1);
+    border-radius: 5px;
+    display: none;
+}
+
+.second_part .destroy_session {
+    padding: 10px;
+    width: 100%;
+}
+
+.second_part .connexion_toggle input {
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.second_part .connexion_toggle_button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second_part .connexion_toggle_button button,
+a {
+    text-transform: capitalize;
+    min-width: 45%;
+    padding: 5px;
+    text-align: center;
+}
+
+.second_part input,
+.second_part button,
+.second_part a {
+    border-style: none;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.third_part {
+    background: var(--color-3);
+    padding-bottom: 10px;
+}
+
+.third_part h2 {
+    padding: 20px;
+}
+
+.third_part h3 {
+    color: #463736;
+    text-transform: capitalize;
+    padding: 20px;
+    text-align: center;
+}
+
+.third_part .view {
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.third_part .reiki_view div:last-child {
+    margin-bottom: 0;
+}
+
+.third_part .view h4 {
+    color: var(--color-1);
+    padding: 10px 0;
+}
+
+.third_part .view p:nth-child(3) {
+    text-align: right;
+    color: var(--color-1)
+}
+
+.fourth_part {
+    padding: 20px 0;
+}
+
+.fourth_part .service_contact {
+    display: flex;
+    flex-flow: column;
+}
+
+.fourth_part .service_part {
+    background: var(--color-2);
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.fourth_part .service_part ul {
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    font-weight: bold;
+    color: #463736;
+
+}
+
+.fourth_part .service_part ul .time_price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+
+}
+
+.fourth_part .contact_part {
+    display: flex;
+    flex-flow: column;
+    width: 95%;
+    margin: 0 auto;
+    background: var(--color-3);
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.fourth_part .contact_part li a {
+    color: #fff;
+}
+
+
+/***/
+/* SIDE_PAGE */
+/***/
+
+.side_page {
+    background: var(--color-3);
+    padding-bottom: 10px;
+}
+
+.side_page h2 {
+    color: #fff;
+    padding: 20px;
+}
+
+.side_page form {
+    display: flex;
+    flex-flow: column;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.side_page input,
+textarea,
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.side_page textarea {
+    resize: none;
+}
+
+.side_page input::placeholder,
+textarea::placeholder,
+button,
+select {
+    text-transform: capitalize;
+}
+
+.side_page button {
+    border-style: none
+}
+
+.list {
+    padding: 20px;
+}
+
+.list ul {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    border-bottom: 1px solid #424242;
+
+}
+
+.list li {
+    align-self: center;
+    padding: 10px 5px;
+}
+
+.list ul li:nth-child(1) {
+    width: 80%;
+}
+
+.list ul li:nth-child(2) {
+    width: 15%;
+}
+
+.list ul li:nth-child(3) {
+    width: 5%;
+}
+
 @media screen and (min-width: 0px) and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
 
     main {
         padding-bottom: 110px;
@@ -77,6 +393,10 @@ h1 {
         font-size: 1.2em;
     }
 
+    .nav_mobile .home_button {
+        margin: 20px 0;
+    }
+
     .menu_mobile_button {
         display: flex;
         justify-content: center;
@@ -91,7 +411,6 @@ h1 {
         z-index: 0;
         border-radius: 50%;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-        transition: all .5s;
     }
 
     .menu_mobile_button svg {
@@ -141,301 +460,170 @@ h1 {
     }
 
     .first_part {
-        display: flex;
         flex-flow: column;
-        background: var(--color-3);
     }
 
-    .first_part div {
-        text-align: center;
-        padding: 20px 0;
+    iframe {
+        display: none;
     }
 
-    h2 {
-        text-transform: capitalize;
-        font-family: 'Cookie';
-        text-align: center;
-        font-size: 2em;
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .nav_mobile,
+    .menu_mobile_button,
+    .logo_mobile_top {
+        display: none;
     }
 
-    .first_part h2,
-    .third_part h2 {
+    .nav_space {
+        height: 70px;
+    }
+
+    .button,
+    .connexion_toggle a,
+    .connexion_toggle button {
+        cursor: pointer;
+    }
+
+    body,
+    nav {
+        background: rgb(245, 114, 100);
+        background: linear-gradient(127deg, rgba(245, 114, 100, 1) 0%, rgba(245, 114, 100, 1) 35%, rgba(212, 99, 87, 1) 68%, rgba(247, 182, 175, 1) 100%);
+        background-attachment: fixed;
+    }
+
+    nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    nav a {
+        padding: 10px;
         color: #fff;
+    }
+
+
+    #home_page {
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .first_part,
+    .second_part,
+    .third_part,
+    .fourth_part {
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    .first_part {
+        padding-bottom: 10px;
+        flex-flow: row;
+
     }
 
     .first_part .reflexe_primitif,
     .reiki {
-        width: 95%;
-        margin: 0 auto;
+        width: 45%;
     }
 
     .first_part div div {
-        background: #fff;
-        margin-top: 20px;
-        padding: 20px;
-        border-radius: 5px;
+        background: var(--color-2);
     }
 
-    .first_part h3 {
-        text-transform: capitalize;
+    .first_part h2,
+    .first_part p {
         color: var(--color-3)
     }
 
-    .first_part ul {
-        padding: 20px 0;
-    }
-
-    .first_part h3,
-    .first_part li {
-        text-align: center;
-    }
-
-    .first_part li {
-        color: var(--color-4)
-    }
-
-    .first_part p {
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-    }
-
-    .first_part .button,
-    .side_page button {
-        font-size: inherit;
-        margin: 0 auto;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-        color: #fff;
-        background: var(--color-1)
-    }
-
-    .second_part {
-        display: flex;
-        flex-flow: column;
-        padding: 20px 0;
-    }
-
-    .second_part h2 {
-        color: var(--color-3);
-    }
-
-    .second_part .profil_picture {
-        margin: 20px auto;
-    }
-
-    .second_part .profil_picture img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-
-    .second_part p {
-        padding: 20px;
-        text-align: justify;
-        color: var(--color-4)
-    }
-
-    .second_part .connexion_toggle {
-        position: fixed;
-        bottom: 30px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-flow: column;
-        width: 80%;
-        max-width: 300px;
-        padding: 20px;
-        background: var(--color-1);
-        border-radius: 5px;
-        display: none;
-    }
-
-    .second_part .destroy_session {
-        padding: 10px;
-        width: 100%;
-    }
-
-    .second_part .connexion_toggle input {
-        padding: 10px;
-        margin-bottom: 5px;
-        width: 100%;
-    }
-
-    .second_part .connexion_toggle_button {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .second_part .connexion_toggle_button button,
-    a {
-        text-transform: capitalize;
-        min-width: 45%;
-        padding: 5px;
-        text-align: center;
-    }
-
-    .second_part input,
-    .second_part button,
-    .second_part a {
-        border-style: none;
-        border-radius: 5px;
-        background: #fff;
-    }
-
-    .third_part {
-        background: var(--color-3);
-        padding-bottom: 10px;
-    }
-
-    .third_part h2 {
-        padding: 20px;
-    }
-
-    .third_part h3 {
-        color:#463736;
-        text-transform: capitalize;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .third_part .view {
-        width: 95%;
-        margin: 0 auto;
-        border-radius: 5px;
-        background: #fff;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
-
-    .third_part .reiki_view div:last-child {
-        margin-bottom: 0;
-    }
-
-    .third_part .view h4 {
-        color: var(--color-1);
-        padding: 10px 0;
-    }
-
-    .third_part .view p:nth-child(3) {
-        text-align: right;
-        color: var(--color-1)
-    }
-
-    .fourth_part {
-        padding: 20px 0;
-    }
-
-    .fourth_part .service_contact {
-        display: flex;
-        flex-flow: column;
-    }
-
-    .fourth_part .service_part {
-        background: var(--color-2);
-        width: 95%;
-        margin: 0 auto;
-        padding: 10px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-
-    .fourth_part .service_part ul {
-        display: flex;
-        flex-flow: column;
-        padding: 10px;
-        font-weight: bold;
-        color:#463736;
-
-    }
-
-    .fourth_part .service_part ul .time_price {
-        display: flex;
-        justify-content: space-between;
-        font-weight: normal;
-
-    }
-
-    .fourth_part .contact_part {
-        display: flex;
-        flex-flow: column;
-        width: 95%;
-        margin: 0 auto;
-        background: var(--color-3);
-        border-radius: 5px;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-    }
-
-
-    .fourth_part .contact_part li a {
-        color: #fff;
-    }
-
-    /***/
-    /* SIDE_PAGE */
-    /***/
-
-    .side_page {
-        background: var(--color-3);
-        padding-bottom: 10px;
-    }
-
-    .side_page h2 {
-        color: #fff;
-        padding: 20px;
-    }
-
-    .side_page form {
-        display: flex;
-        flex-flow: column;
+    .second_part .picture_description {
+        flex-flow: row;
+        align-items: center;
         width: 70%;
         margin: 0 auto;
     }
 
-    .side_page input,
-    textarea,
-    select {
-        padding: 10px;
-        margin-bottom: 10px;
+    .third_part h2 {
+        color: var(--color-3);
     }
 
-    .side_page textarea {
-        resize: none;
+    .third_part .reiki_view_reflexe_primitif_view {
+        display: flex;
+        flex-flow: row;
     }
 
-    .side_page input::placeholder,
-    textarea::placeholder,
-    button,
-    select {
-        text-transform: capitalize;
+    .third_part .view {
+        background: var(--color-2);
     }
 
-    .side_page button {
-        border-style: none
+    .fourth_part {
+        padding: 0;
     }
 
-    .list {
+    .fourth_part .service_contact {
+        flex-flow: row;
         padding: 20px;
+        margin: 0 auto;
+
+    }
+
+    .fourth_part .service_contact .service_part {
+        height: 100%;
+        margin-bottom: 0;
+
+    }
+
+    .fourth_part .service_part {
+        background: #fff;
+        width: 50%;
+    }
+
+    .fourth_part .contact_part {
+        width: 50%;
+        max-width: 600px;
+    }
+
+    .fourth_part .contact_part ul {
+        padding-top: 20px;
+    }
+
+    /**/
+    /* SIDE PAGE */
+    /**/
+
+    .side_page {
+        background: none;
     }
 
     .list ul {
-        display: flex;
-        justify-content: space-between;
-        align-self: center;
-        border-bottom: 1px solid #424242;
+        justify-content: inherit;
+    }
+
+
+
+    .list ul li {
+        color: #fff;
 
     }
 
-    .list li {
-        align-self: center;
-        padding: 10px 5px;
+    .list ul li:nth-child(1) {
+        width: 90%;
+    }
+
+    .list ul li:nth-child(2) {
+        width: 5%;
+    }
+
+    .list ul li:nth-child(3) {
+        width: 5%;
     }
 
 }
-
-@media screen and (min-width: 1024px) {}

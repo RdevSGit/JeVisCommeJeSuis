@@ -21,4 +21,16 @@ class MainController
         $template = "home";
         include "view/layout.phtml";
     }
+    
+    public function ShowReikiPage()
+    {
+        $template = "more_about_reiki";
+        include "view/layout.phtml";
+    }
+
+    public function ShowReflexePage()
+    {
+        $template = "more_about_reflexe";
+        include "view/layout.phtml";
+    }
 }
