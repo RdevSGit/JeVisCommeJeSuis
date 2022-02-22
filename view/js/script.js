@@ -64,14 +64,15 @@ function backToHomePage() {
   document.location.href = "index.php";
 }
 function transformNav() {
-  // if (document.scrollTop > 120) {
-  //   $("nav").toggleClass("transform");
-  //   $(".title").toggleClass("margin");
-  // };
-  if (window.scrollY >= 100) {
+
+  if (window.scrollY >= 50) {
     $("nav").addClass("transform");
+    $("nav a").addClass("color");
+
   } else {
     $("nav").removeClass("transform");
+    $("nav a").removeClass("color");
+
   }
 }
 $(function () {

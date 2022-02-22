@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 }
 
+* {
+    outline: 0;
+}
+
 li {
     list-style: none;
 }
@@ -381,10 +385,12 @@ select {
     border-radius: 5px;
 
 }
-.more_about p{
-    margin-bottom:10px;
+
+.more_about p {
+    margin-bottom: 10px;
 }
-.underline{
+
+.underline {
     text-decoration: underline;
 }
 
@@ -398,8 +404,10 @@ select {
     }
 
     main {
-        background: rgb(245, 114, 100);
-        background: linear-gradient(127deg, rgba(245, 114, 100, 1) 0%, rgba(245, 114, 100, 1) 35%, rgba(212, 99, 87, 1) 68%, rgba(247, 182, 175, 1) 100%);
+        background: hsla(6, 88%, 68%, 1);
+        background: linear-gradient(180deg, hsla(6, 88%, 68%, 1) 0%, hsla(6, 82%, 83%, 1) 100%);
+        background: -moz-linear-gradient(180deg, hsla(6, 88%, 68%, 1) 0%, hsla(6, 82%, 83%, 1) 100%);
+        background: -webkit-linear-gradient(180deg, hsla(6, 88%, 68%, 1) 0%, hsla(6, 82%, 83%, 1) 100%);
         background-attachment: fixed;
     }
 
@@ -443,10 +451,15 @@ select {
         z-index: 0;
         border-radius: 50%;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        overflow: hidden;
+        user-select: none;
+
     }
 
     .menu_mobile_button svg {
         transition: all .5s;
+        border-radius: 50%;
+
     }
 
     .raise_nav {
@@ -475,7 +488,7 @@ select {
     .logo_mobile_top_h1 {
         height: 25%;
         text-align: center;
-        padding: 50px;
+        padding: 20px;
     }
 
     .logo_mobile_top h1 {
@@ -505,12 +518,12 @@ select {
     }
 
     .second_part,
-    .fourth_part{
+    .fourth_part {
         background: #fff;
     }
-    
+
     /* MORE ABOUT */
-    .more_about{
+    .more_about {
         width: 100%;
     }
 
@@ -536,10 +549,9 @@ select {
         cursor: pointer;
     }
 
-    body,
-    nav {
-        background: rgb(245, 114, 100);
-        background: linear-gradient(127deg, rgba(245, 114, 100, 1) 0%, rgba(245, 114, 100, 1) 35%, rgba(212, 99, 87, 1) 68%, rgba(247, 182, 175, 1) 100%);
+    body {
+        background: hsla(6, 88%, 68%, 1);
+        background: linear-gradient(180deg, hsla(6, 88%, 68%, 0.5) 0%, hsla(6, 82%, 83%, 0.5) 100%);
         background-attachment: fixed;
     }
 
@@ -551,21 +563,26 @@ select {
         display: flex;
         align-items: center;
         align-self: center;
-        transition: all 1s;
+        transition: all .5s;
+        background: hsla(6, 88%, 68%, 1);
+        background: linear-gradient(180deg, hsla(6, 88%, 68%, 0.5) 0%, hsla(6, 82%, 83%, 0.5) 100%);
     }
 
     nav.transform {
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        background: hsla(6, 88%, 68%, 1);
     }
 
     nav a {
         padding: 20px;
-        color: #fff;
         text-transform: capitalize;
+        transition: all .5s;
+        color: #fff;
+
     }
 
     nav a:hover {
-        box-shadow: var(--color-2) 0px -3px 0px inset;
+        box-shadow: var(--color-3) 0px -3px 0px inset;
     }
 
     nav h1 a:hover {
@@ -694,6 +711,12 @@ select {
         background: none;
     }
 
+    .list {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
     .list ul {
         justify-content: inherit;
     }
@@ -715,7 +738,7 @@ select {
         width: 5%;
     }
 
-    .list ul li svg{
+    .list ul li svg {
         cursor: pointer;
     }
 
