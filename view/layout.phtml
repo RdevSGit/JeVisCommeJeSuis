@@ -20,10 +20,14 @@
             <a href="index.php">Acceuil</a>
             <a class="destroy_session">déconnexion</a>
         <?php else : ?>
-            <a href="#first_anchor">réflexes primitifs et reiki</a>
-            <a href="#second_anchor">qui suis-je</a>
-            <a href="#third_anchor">témoignages</a>
-            <a href="#fourth_anchor">tarif & contact</a>
+            <?php if (isset($_GET['page']) == "en_savoir_plus_sur_les_réflexes_primitif" || isset($_GET['page']) == "en_savoir_plus_sur_le_reiki") : ?>
+                <a href="index.php">Acceuil</a>
+            <?php else : ?>
+                <a href="#first_anchor">réflexes primitifs et reiki</a>
+                <a href="#second_anchor">qui suis-je</a>
+                <a href="#third_anchor">témoignages</a>
+                <a href="#fourth_anchor">tarif & contact</a>
+            <?php endif; ?>
             <h1><a href="index.php" class="title">je vis comme je suis</a></h1>
         <?php endif; ?>
     </nav>

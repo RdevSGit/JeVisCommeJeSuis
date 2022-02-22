@@ -111,7 +111,8 @@ h2 {
 }
 
 .first_part .button,
-.side_page button {
+.side_page button,
+.more_about .button {
     font-size: inherit;
     margin: 0 auto;
     padding: 10px;
@@ -364,6 +365,29 @@ select {
     width: 5%;
 }
 
+
+/* MORE ABOUT */
+
+.more_about {
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.more_about_page {
+    padding: 20px;
+    background: #fff;
+    margin-top: 50px;
+    border-radius: 5px;
+
+}
+.more_about p{
+    margin-bottom:10px;
+}
+.underline{
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 0px) and (max-width: 1024px) {
     nav {
         display: none;
@@ -371,6 +395,12 @@ select {
 
     main {
         padding-bottom: 110px;
+    }
+
+    main {
+        background: rgb(245, 114, 100);
+        background: linear-gradient(127deg, rgba(245, 114, 100, 1) 0%, rgba(245, 114, 100, 1) 35%, rgba(212, 99, 87, 1) 68%, rgba(247, 182, 175, 1) 100%);
+        background-attachment: fixed;
     }
 
     .nav_mobile {
@@ -385,6 +415,8 @@ select {
         border-radius: 10px 10px 0 0;
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         transition: all .4s;
+        text-align: center;
+        text-transform: capitalize;
     }
 
     .nav_mobile a {
@@ -437,6 +469,7 @@ select {
         display: flex;
         flex-flow: column;
         justify-content: center;
+        background: #fff;
     }
 
     .logo_mobile_top_h1 {
@@ -466,6 +499,21 @@ select {
     iframe {
         display: none;
     }
+
+    .logo_bottom_page {
+        display: none;
+    }
+
+    .second_part,
+    .fourth_part{
+        background: #fff;
+    }
+    
+    /* MORE ABOUT */
+    .more_about{
+        width: 100%;
+    }
+
 
 
 }
