@@ -678,6 +678,7 @@ select {
         position: fixed;
         bottom: 0;
         right: -3%;
+        z-index: -1;
     }
 
     .logo_bottom_page img {
@@ -697,8 +698,6 @@ select {
         justify-content: inherit;
     }
 
-
-
     .list ul li {
         color: #fff;
 
@@ -715,5 +714,10 @@ select {
     .list ul li:nth-child(3) {
         width: 5%;
     }
+
+    .list ul li svg{
+        cursor: pointer;
+    }
+
 
 }
