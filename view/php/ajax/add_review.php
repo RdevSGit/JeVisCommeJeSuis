@@ -1,6 +1,6 @@
 <?php
 
-include_once "../connexion/connexion.php";
+include_once "../../../config/connexion/connexion.php";
 
 $title = htmlspecialchars($_POST['title']);
 $content = htmlspecialchars($_POST['content']);

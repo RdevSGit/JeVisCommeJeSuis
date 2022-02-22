@@ -60,10 +60,20 @@ function deleteThis() {
   });
 }
 
-function backToHomePage(){
-  document.location.href="index.php";
+function backToHomePage() {
+  document.location.href = "index.php";
 }
-
+function transformNav() {
+  // if (document.scrollTop > 120) {
+  //   $("nav").toggleClass("transform");
+  //   $(".title").toggleClass("margin");
+  // };
+  if (window.scrollY >= 100) {
+    $("nav").addClass("transform");
+  } else {
+    $("nav").removeClass("transform");
+  }
+}
 $(function () {
   $("#profil_picture").on("click", openConnexionToggle);
   $(".close_connexion_toggle").on("click", openConnexionToggle);
@@ -73,6 +83,6 @@ $(function () {
   $("#add_review_form").submit(addReview);
   $("#add_service_form").submit(addservice);
   $(".list svg").on("click", deleteThis);
-  $('.back').on("click", backToHomePage)
-
+  $(".back").on("click", backToHomePage);
+  $(document).on("scroll", transformNav);
 });

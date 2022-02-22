@@ -17,23 +17,27 @@
         <?php if (isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
             <a href="index.php?page=add_remove_review_page">ajouter / supprimer des avis</a>
             <a href="index.php?page=add_remove_service_page">ajouter / supprimer des prestations</a>
-            <a href="index.php?page=home">Acceuil</a>
+            <a href="index.php">Acceuil</a>
             <a class="destroy_session">déconnexion</a>
         <?php else : ?>
             <a href="#first_anchor">réflexes primitifs et reiki</a>
             <a href="#second_anchor">qui suis-je</a>
             <a href="#third_anchor">témoignages</a>
             <a href="#fourth_anchor">tarif & contact</a>
+            <h1><a href="index.php" class="title">je vis comme je suis</a></h1>
         <?php endif; ?>
     </nav>
     <main>
         <?php include $template . ".phtml"; ?>
+        <div class="logo_bottom_page">
+            <img src="view/img/logo-je-vis-comme-je-suis--basic.png" alt="logo">
+        </div>
     </main>
     <div class="nav_mobile">
         <?php if (isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
             <a href="index.php?page=add_remove_review_page">ajouter / supprimer des avis</a>
             <a href="index.php?page=add_remove_service_page">ajouter / supprimer des prestations</a>
-            <a href="index.php?page=home">Acceuil</a>
+            <a href="index.php">Acceuil</a>
             <a class="destroy_session">déconnexion</a>
         <?php else : ?>
             <a href="#reflexe_primitif">les réflexes primitifs</a>

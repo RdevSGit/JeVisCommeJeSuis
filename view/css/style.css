@@ -186,7 +186,7 @@ h2 {
 }
 
 .second_part .connexion_toggle_button button,
-a {
+.second_part .connexion_toggle_button a {
     text-transform: capitalize;
     min-width: 45%;
     padding: 5px;
@@ -442,7 +442,7 @@ select {
     .logo_mobile_top_h1 {
         height: 25%;
         text-align: center;
-        padding: 0 50px;
+        padding: 50px;
     }
 
     .logo_mobile_top h1 {
@@ -500,14 +500,44 @@ select {
         position: sticky;
         top: 0;
         width: 100%;
-        padding: 20px;
+        display: flex;
+        align-items: center;
+        align-self: center;
+        transition: all 1s;
+    }
 
+    nav.transform {
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
 
     nav a {
-        padding: 10px;
+        padding: 20px;
         color: #fff;
+        text-transform: capitalize;
     }
+
+    nav a:hover {
+        box-shadow: var(--color-2) 0px -3px 0px inset;
+    }
+
+    nav h1 a:hover {
+        box-shadow: inherit;
+    }
+
+    nav .title {
+        position: fixed;
+        right: 20px;
+        top: 0px;
+        padding: 10px;
+        font-size: 1.7rem;
+        font-family: "Cookie";
+        color: var(--color-4);
+        font-weight: bold;
+        text-align: right;
+        height: fit-content;
+
+    }
+
 
 
     #home_page {
@@ -527,7 +557,6 @@ select {
     .first_part {
         padding-bottom: 10px;
         flex-flow: row;
-
     }
 
     .first_part .reflexe_primitif,
@@ -593,6 +622,19 @@ select {
 
     .fourth_part .contact_part ul {
         padding-top: 20px;
+    }
+
+    .logo_bottom_page {
+        width: 20%;
+        height: auto;
+        position: fixed;
+        bottom: 0;
+        right: -3%;
+    }
+
+    .logo_bottom_page img {
+        width: 100%;
+
     }
 
     /**/
