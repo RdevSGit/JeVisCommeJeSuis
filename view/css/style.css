@@ -92,7 +92,8 @@ h2 {
 
 .first_part h3 {
     text-transform: capitalize;
-    color: var(--color-3)
+    color: var(--color-3);
+
 }
 
 .first_part ul {
@@ -229,6 +230,10 @@ h2 {
     background: #fff;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+.third_part .view p {
+    color: var(--color-4)
 }
 
 .third_part .reiki_view div:last-child {
@@ -403,13 +408,13 @@ select {
         padding-bottom: 110px;
     }
 
-    main {
+    /* main {
         background: hsla(6, 88%, 68%, 1);
         background: linear-gradient(180deg, hsla(6, 88%, 68%, 1) 0%, hsla(6, 82%, 83%, 1) 100%);
         background: -moz-linear-gradient(180deg, hsla(6, 88%, 68%, 1) 0%, hsla(6, 82%, 83%, 1) 100%);
         background: -webkit-linear-gradient(180deg, hsla(6, 88%, 68%, 1) 0%, hsla(6, 82%, 83%, 1) 100%);
         background-attachment: fixed;
-    }
+    } */
 
     .nav_mobile {
         display: flex;
@@ -527,6 +532,15 @@ select {
         width: 100%;
     }
 
+    .more_about_page {
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    .more_about .button {
+        display: none;
+    }
+
 
 
 }
@@ -550,9 +564,7 @@ select {
     }
 
     body {
-        background: hsla(6, 88%, 68%, 1);
-        background: linear-gradient(180deg, hsla(6, 88%, 68%, 0.5) 0%, hsla(6, 82%, 83%, 0.5) 100%);
-        background-attachment: fixed;
+        background: #fff;
     }
 
     nav {
@@ -565,7 +577,6 @@ select {
         align-self: center;
         transition: all .5s;
         background: hsla(6, 88%, 68%, 1);
-        background: linear-gradient(180deg, hsla(6, 88%, 68%, 0.5) 0%, hsla(6, 82%, 83%, 0.5) 100%);
     }
 
     nav.transform {
@@ -582,7 +593,7 @@ select {
     }
 
     nav a:hover {
-        box-shadow: var(--color-3) 0px -3px 0px inset;
+        box-shadow: var(--color-2) 0px -3px 0px inset;
     }
 
     nav h1 a:hover {
@@ -596,19 +607,18 @@ select {
         padding: 10px;
         font-size: 1.7rem;
         font-family: "Cookie";
-        color: var(--color-4);
+        color: #fff;
         font-weight: bold;
         text-align: right;
         height: fit-content;
 
     }
 
-
-
     #home_page {
         width: 70%;
         margin: 0 auto;
         padding-bottom: 100px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     }
 
     .first_part,
@@ -617,6 +627,7 @@ select {
     .fourth_part {
         background: #fff;
         border-radius: 5px;
+
     }
 
     .first_part {
@@ -630,23 +641,60 @@ select {
     }
 
     .first_part div div {
-        background: var(--color-2);
+        background: hsla(6, 88%, 68%, 1);
     }
 
     .first_part h2,
     .first_part p {
-        color: var(--color-3)
+        color: var(--color-3);
+    }
+
+    .first_part h3 {
+        color: #fff;
+    }
+
+    .first_part li {
+        color: #fefefe;
+    }
+
+    .second_part {
+        background: #fff;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .second_part h2 {
+        padding: 20px;
     }
 
     .second_part .picture_description {
         flex-flow: row;
         align-items: center;
+        border-radius: 5px;
+        margin: 0 auto;
+        background: var(--color-3);
+        padding: 50px;
+    }
+
+    .second_part .who_i_am {
         width: 70%;
+        text-align: center;
+
+    }
+
+    .second_part p {
+        color: #fff;
+
+    }
+
+    .third_part {
+        width: 97%;
         margin: 0 auto;
     }
 
     .third_part h2 {
         color: var(--color-3);
+
     }
 
     .third_part .reiki_view_reflexe_primitif_view {
@@ -666,6 +714,10 @@ select {
         flex-flow: row;
         padding: 20px;
         margin: 0 auto;
+        background: var(--color-3);
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 5px;
 
     }
 
@@ -721,10 +773,6 @@ select {
         justify-content: inherit;
     }
 
-    .list ul li {
-        color: #fff;
-
-    }
 
     .list ul li:nth-child(1) {
         width: 90%;
@@ -742,5 +790,18 @@ select {
         cursor: pointer;
     }
 
+    /* MORE ABOUT */
 
+    .more_about {
+        margin-top: 30px;
+
+    }
+
+    .more_about_page {
+        margin-top: 0;
+    }
+
+    .more_about .button {
+        margin-left: 20px;
+    }
 }

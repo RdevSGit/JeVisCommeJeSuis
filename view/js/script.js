@@ -9,7 +9,7 @@ function destroySession() {
     type: "GET",
     url: "view/php/ajax/destroy_session.php",
     success: function () {
-      document.location.href = "index.php";
+      document.location.href = "accueil";
     },
   });
 }
@@ -61,18 +61,16 @@ function deleteThis() {
 }
 
 function backToHomePage() {
-  document.location.href = "index.php";
+  document.location.href = "accueil";
 }
-function transformNav() {
 
+function transformNav() {
   if (window.scrollY >= 50) {
     $("nav").addClass("transform");
     $("nav a").addClass("color");
-
   } else {
     $("nav").removeClass("transform");
     $("nav a").removeClass("color");
-
   }
 }
 $(function () {

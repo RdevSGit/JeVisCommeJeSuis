@@ -32,6 +32,9 @@ if (isset($_GET["page"])) {
         case "en_savoir_plus_sur_les_réflexes_primitif":
             $MainController->ShowReflexePage();
             break;
+        case "home":
+            $MainController->ShowHomePage();
+            break;
     }
 } else {
     $MainController->ShowHomePage();

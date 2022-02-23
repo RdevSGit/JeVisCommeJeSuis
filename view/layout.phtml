@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Accompagnement enfants adultes avec difficultés d’apprentissage, émotionnelle, posture, motricité.
-    Développement personnel, performance sportive, musicale.">
     <meta property="og:url" content="https://jeviscommejesuis.fr/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="je vis comme je suis">
+    <meta name="description" content="Accompagnement enfants adultes avec difficultés d’apprentissage, émotionnelle, posture, motricité. Développement personnel, performance sportive, musicale.">
     <meta name="google-site-verification" content="VpxKGi42lmvD2M8tMoa5gXQahJQCpRJmLbYQKyEKY1g" />
     <link rel="apple-touch-icon" sizes="180x180" href="view/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="view/img/favicon/favicon-32x32.png">
@@ -19,23 +18,24 @@
     <title>Je vis comme je suis - Réflexes primitifs Reiki - Bourges</title>
 </head>
 
+
 <body>
     <nav>
         <?php if (isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
             <a href="index.php?page=add_remove_review_page">ajouter / supprimer des avis</a>
             <a href="index.php?page=add_remove_service_page">ajouter / supprimer des prestations</a>
-            <a href="index.php">Acceuil</a>
+            <a href="accueil">accueil</a>
             <a class="destroy_session">déconnexion</a>
         <?php else : ?>
-            <?php if (isset($_GET['page']) == "en_savoir_plus_sur_les_réflexes_primitif" || isset($_GET['page']) == "en_savoir_plus_sur_le_reiki") : ?>
-                <a href="index.php">Acceuil</a>
+            <?php if (isset($_GET['page']) && $_GET['page'] != "home") : ?>
+                <a href="accueil">accueil</a>
             <?php else : ?>
                 <a href="#reflexe_reiki">réflexes primitifs et reiki</a>
                 <a href="#qui_suis_je">qui suis-je</a>
                 <a href="#temoignage">témoignages</a>
                 <a href="#contact">tarif & contact</a>
             <?php endif; ?>
-            <h1><a href="index.php" class="title">je vis comme je suis</a></h1>
+            <h1><a href="accueil" class="title">je vis comme je suis</a></h1>
         <?php endif; ?>
     </nav>
     <main>
@@ -48,7 +48,7 @@
         <?php if (isset($_SESSION['id']) && !empty($_SESSION['id'])) : ?>
             <a href="index.php?page=add_remove_review_page">ajouter / supprimer des avis</a>
             <a href="index.php?page=add_remove_service_page">ajouter / supprimer des prestations</a>
-            <a href="index.php">Acceuil</a>
+            <a href="accueil">accueil</a>
             <a class="destroy_session">déconnexion</a>
         <?php else : ?>
             <a href="#reflexe_primitif">les réflexes primitifs</a>
@@ -59,7 +59,7 @@
         <?php endif; ?>
     </div>
     <div class="menu_mobile_button">
-        <?php if (isset($_GET['page']) == "en_savoir_plus_sur_les_réflexes_primitif" || isset($_GET['page']) == "en_savoir_plus_sur_le_reiki") : ?>
+        <?php if (isset($_GET['page']) && $_GET['page'] != "home") : ?>
             <svg viewBox="0 0 64 64" width="30" height="30" class="back" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>Undo</title>
                 <desc>A line styled icon from Orion Icon Library.</desc>
