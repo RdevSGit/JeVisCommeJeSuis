@@ -301,7 +301,6 @@ h2 {
     color: #fff;
 }
 
-
 /***/
 /* SIDE_PAGE */
 /***/
@@ -407,14 +406,6 @@ select {
     main {
         padding-bottom: 110px;
     }
-
-    /* main {
-        background: hsla(6, 88%, 68%, 1);
-        background: linear-gradient(180deg, hsla(6, 88%, 68%, 1) 0%, hsla(6, 82%, 83%, 1) 100%);
-        background: -moz-linear-gradient(180deg, hsla(6, 88%, 68%, 1) 0%, hsla(6, 82%, 83%, 1) 100%);
-        background: -webkit-linear-gradient(180deg, hsla(6, 88%, 68%, 1) 0%, hsla(6, 82%, 83%, 1) 100%);
-        background-attachment: fixed;
-    } */
 
     .nav_mobile {
         display: flex;
@@ -525,6 +516,13 @@ select {
     .second_part,
     .fourth_part {
         background: #fff;
+    }
+
+    .social {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin-top:-20px;
     }
 
     /* MORE ABOUT */
@@ -735,11 +733,18 @@ select {
     .fourth_part .contact_part {
         width: 50%;
         max-width: 600px;
+        padding: 0 20px;
+    }
+
+    .fourth_part iframe {
+        height: 300px;
     }
 
     .fourth_part .contact_part ul {
         padding-top: 20px;
     }
+
+
 
     .logo_bottom_page {
         width: 20%;
@@ -755,6 +760,20 @@ select {
 
     }
 
+    .social {
+        position: fixed;
+        left: 10%;
+        bottom: 20%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .social a{
+        transition: all .3s;
+    }
+    .social a:hover{
+        transform: scale(1.2);
+    }
     /**/
     /* SIDE PAGE */
     /**/
